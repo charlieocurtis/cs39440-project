@@ -7,6 +7,9 @@ https://en.wikipedia.org/wiki/Lossy_compression
 Compression Methods:
 Discrete Cosine transform (DCT) - https://en.wikipedia.org/wiki/Discrete_cosine_transform
 Diagnostically acceptable irreversible compression (DAIC) - https://en.wikipedia.org/wiki/Diagnostically_acceptable_irreversible_compression
+Chroma subsampling - https://en.wikipedia.org/wiki/Chroma_subsampling
+Fractacl compression - https://en.wikipedia.org/wiki/Fractal_compression
+**THE ABOVE IS BEST SUITED FOR NATURAL IMAGES/TEXTURES E.G. SURFACE OF MARS?**
 
 Study into image compression methods (medicine):
 https://pubmed.ncbi.nlm.nih.gov/22436596/
