@@ -7,3 +7,6 @@ https://en.wikipedia.org/wiki/Lossy_compression
 Compression Methods:
 Discrete Cosine transform (DCT) - https://en.wikipedia.org/wiki/Discrete_cosine_transform
 Diagnostically acceptable irreversible compression (DAIC) - https://en.wikipedia.org/wiki/Diagnostically_acceptable_irreversible_compression
+
+Study into image compression methods (medicine):
+https://pubmed.ncbi.nlm.nih.gov/22436596/
