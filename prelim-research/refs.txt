@@ -15,5 +15,9 @@ Fractacl compression - https://en.wikipedia.org/wiki/Fractal_compression
   - https://mathworld.wolfram.com/Fractal.html?fbclid=IwAR1H9mKcMIgLzBCkkkGDlSaPHiOthpv87vanYfRKzMWo94jJ2kdbvb9sbAw
 **THE ABOVE IS BEST SUITED FOR NATURAL IMAGES/TEXTURES E.G. SURFACE OF MARS?**
 
+Chroma subsampling, DCT, and Quantization all used in JPG format compression
+JPG format better for non-synthetic images that dont contain sharp line edges (i.e. natural images such as landscapes)
+ - https://www.youtube.com/watch?v=Ba89cI9eIg8
+
 Study into image compression methods (medicine):
 https://pubmed.ncbi.nlm.nih.gov/22436596/
