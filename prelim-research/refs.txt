@@ -12,6 +12,7 @@ Discrete Cosine transform (DCT) - https://en.wikipedia.org/wiki/Discrete_cosine_
 Diagnostically acceptable irreversible compression (DAIC) - https://en.wikipedia.org/wiki/Diagnostically_acceptable_irreversible_compression
 Chroma subsampling - https://en.wikipedia.org/wiki/Chroma_subsampling
 Fractacl compression - https://en.wikipedia.org/wiki/Fractal_compression
+  - https://mathworld.wolfram.com/Fractal.html?fbclid=IwAR1H9mKcMIgLzBCkkkGDlSaPHiOthpv87vanYfRKzMWo94jJ2kdbvb9sbAw
 **THE ABOVE IS BEST SUITED FOR NATURAL IMAGES/TEXTURES E.G. SURFACE OF MARS?**
 
 Study into image compression methods (medicine):
