@@ -21,3 +21,6 @@ JPG format better for non-synthetic images that dont contain sharp line edges (i
 
 Study into image compression methods (medicine):
 https://pubmed.ncbi.nlm.nih.gov/22436596/
+
+Paper on fractal compression:
+https://www.ti.com/lit/an/bpra065/bpra065.pdf
