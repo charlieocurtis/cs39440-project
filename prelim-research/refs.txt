@@ -25,3 +25,6 @@ https://pubmed.ncbi.nlm.nih.gov/22436596/
 
 Paper on fractal compression:
 https://www.ti.com/lit/an/bpra065/bpra065.pdf
+
+General:
+https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/Steady_driving_towards_ExoMars_launch
