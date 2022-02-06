@@ -1,3 +1,11 @@
+PanCam anatomy:
+https://exomars.wales/
+https://www.liebertpub.com/doi/full/10.1089/ast.2016.1548
+
+Compression Algorithm currently used in PanCam:
+https://essr.esa.int/project/whitedwarf
+https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Onboard_Data_Processing/Data_Compression_Tools
+
 Quantization:
 https://www.youtube.com/watch?v=O0suOccKLbs
 
@@ -7,3 +15,20 @@ https://en.wikipedia.org/wiki/Lossy_compression
 Compression Methods:
 Discrete Cosine transform (DCT) - https://en.wikipedia.org/wiki/Discrete_cosine_transform
 Diagnostically acceptable irreversible compression (DAIC) - https://en.wikipedia.org/wiki/Diagnostically_acceptable_irreversible_compression
+Chroma subsampling - https://en.wikipedia.org/wiki/Chroma_subsampling
+Fractacl compression - https://en.wikipedia.org/wiki/Fractal_compression
+  - https://mathworld.wolfram.com/Fractal.html?fbclid=IwAR1H9mKcMIgLzBCkkkGDlSaPHiOthpv87vanYfRKzMWo94jJ2kdbvb9sbAw
+**THE ABOVE IS BEST SUITED FOR NATURAL IMAGES/TEXTURES E.G. SURFACE OF MARS?**
+
+Chroma subsampling, DCT, and Quantization all used in JPG format compression
+JPG format better for non-synthetic images that dont contain sharp line edges (i.e. natural images such as landscapes)
+ - https://www.youtube.com/watch?v=Ba89cI9eIg8
+
+Study into image compression methods (medicine):
+https://pubmed.ncbi.nlm.nih.gov/22436596/
+
+Paper on fractal compression:
+https://www.ti.com/lit/an/bpra065/bpra065.pdf
+
+General:
+https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/Steady_driving_towards_ExoMars_launch
