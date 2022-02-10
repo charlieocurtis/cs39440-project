@@ -6,3 +6,7 @@ https://www.morganclaypool.com/doi/abs/10.2200/S00010ED1V01Y200508IVM003
 	"The book is written to be accessible to university students curious about the state-of-the-art of image quality assessment, expert industrial R&D engineers
 	seeking to implement image/video quality assessment systems for specific applications, and academic theorists interested in developing new algorithms
 	forimage quality assessment or using existing algorithms to design or optimize other image processing applications."
+
+"A Statistical Evaluation of Recent Full Reference Image Quality Assessment Algorithms"
+https://ieeexplore.ieee.org/document/1709988
+	- Large sample size and variables tested
