@@ -32,3 +32,6 @@ https://www.ti.com/lit/an/bpra065/bpra065.pdf
 
 General:
 https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/Steady_driving_towards_ExoMars_launch
+
+"A Comprehensive Performance Evaluation of Image Quality Assessment Algorithms":
+https://ieeexplore.ieee.org/abstract/document/8847307
