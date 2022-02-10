@@ -9,4 +9,6 @@
 > 
 > Monday - Wednesday: continued to focus in on a topic for the report/research whilst continuing preliminary research to try and better understand image compression
 > 
-> Wednesday - Friday: Write up for the project outline.
+> Wednesday - Thursday: Write up for the project outline.
+>
+> Thursday: Started research into Image Quality Assessment Aklgorithms (IQAA) specifically.
