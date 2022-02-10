@@ -1,0 +1,5 @@
+"A Comprehensive Performance Evaluation of Image Quality Assessment Algorithms":
+https://ieeexplore.ieee.org/abstract/document/8847307
+
+"Modern image quality assessment - synthesis lectures on image, video, and multimedia processing":
+https://www.morganclaypool.com/doi/abs/10.2200/S00010ED1V01Y200508IVM003
