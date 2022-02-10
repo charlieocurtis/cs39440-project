@@ -1,4 +1,4 @@
 # CS39440 - Major Project
 Repository for CS39440 - Major Project
 
-Image quality assessment for Mars Rover images
+> Comparing image quality assessment algorithms with human perception for optimising image compression for ExoMars
