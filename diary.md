@@ -7,5 +7,5 @@
 
 > ### Week 2 (7th Feb - 13th Feb):
 > 
-> Monday - Wednesday: continued to focus in on a topic for the report/research whilst continuing preliminary research to try and better understand image compression
+> Monday - Wednesday: continued to focus in on a topic for the report/research whilst continuing preliminary research to try and better understand image compression\n
 > Wednesday - Friday: Write up for the project outline.
