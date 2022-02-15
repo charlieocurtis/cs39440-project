@@ -11,4 +11,6 @@
 > 
 > Wednesday - Thursday: Write up for the project outline.
 >
-> Thursday: Started research into Image Quality Assessment Aklgorithms (IQAA) specifically.
+> Thursday: Started research into Image Quality Assessment Algorithms (IQAA) specifically.
+> 
+> Friday: Project outline submitted and continued reading into IQAA
