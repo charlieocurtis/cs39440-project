@@ -24,3 +24,7 @@ https://www.sciencedirect.com/science/article/pii/S1746809416300180
 "Image Quality Assessment through FSIM, SSIM, MSE and PSNR—A Comparative Study"
 https://www.scirp.org/journal/paperinformation.aspx?paperid=90911
 	Looks into and compares set of FR methods
+	
+"Image Quality Assessment by Comparing CNN Features between Images"
+https://www1.icsi.berkeley.edu/~stellayu/publication/doc/2016qualityJIST.pdf
+	New (as of 2016) AI based IQAA (FR)
