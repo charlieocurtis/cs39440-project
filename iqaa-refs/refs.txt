@@ -1,12 +1,39 @@
 "A Comprehensive Performance Evaluation of Image Quality Assessment Algorithms":
 https://ieeexplore.ieee.org/abstract/document/8847307
+	Types of IQA methods (FR/NR etc.)
 
 "Modern image quality assessment - synthesis lectures on image, video, and multimedia processing":
 https://www.morganclaypool.com/doi/abs/10.2200/S00010ED1V01Y200508IVM003
-	"The book is written to be accessible to university students curious about the state-of-the-art of image quality assessment, expert industrial R&D engineers
-	seeking to implement image/video quality assessment systems for specific applications, and academic theorists interested in developing new algorithms
-	forimage quality assessment or using existing algorithms to design or optimize other image processing applications."
+	"The book is written to be accessible to university students curious about the state-of-the-art of image quality assessment, expert industrial R&D
+	engineers seeking to implement image/video quality assessment systems for specific applications, and academic theorists interested in developing new
+	algorithms for image quality assessment or using existing algorithms to design or optimize other image processing applications."
+	**PAID**
 
 "A Statistical Evaluation of Recent Full Reference Image Quality Assessment Algorithms"
 https://ieeexplore.ieee.org/document/1709988
 	- Large sample size and variables tested
+	
+"Applications of Objective Image Quality Assessment Methods"
+https://ieeexplore.ieee.org/abstract/document/6021857
+	Application of IQAA and benchmarking
+	
+"Review of medical image quality assessment"
+https://www.sciencedirect.com/science/article/pii/S1746809416300180
+	IQA in a medical setting (recomends No reference IQA (NR-IQA))
+	
+"Image Quality Assessment through FSIM, SSIM, MSE and PSNR—A Comparative Study"
+https://www.scirp.org/journal/paperinformation.aspx?paperid=90911
+	Looks into and compares set of FR methods
+	
+"Image Quality Assessment by Comparing CNN Features between Images"
+https://www1.icsi.berkeley.edu/~stellayu/publication/doc/2016qualityJIST.pdf
+	New (as of 2016) AI based IQAA (FR)
+
+"Applicability of Existing Objective Metrics of Perceptual Quality for Adaptive Video Streaming"
+http://hal.univ-nantes.fr/hal-01395510/file/applicability_of_existing_etc_iqsp_revised_1.3.pdf
+	Breakdown of IQAA for videos
+	
+"Preliminary Image Compression Results from the Mars Exploration Rovers"
+https://ipnpr.jpl.nasa.gov/progress_report/42-156/156I.pdf
+	Look into image compression on previous mars rovers (establish amount of compression and what distortions were applied)
+	
