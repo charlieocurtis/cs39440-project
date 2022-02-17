@@ -35,3 +35,6 @@ https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploratio
 
 "A Comprehensive Performance Evaluation of Image Quality Assessment Algorithms":
 https://ieeexplore.ieee.org/abstract/document/8847307
+
+Uni guide to referencing styles:
+https://libguides.aber.ac.uk/c.php?g=676952&p=4823317
