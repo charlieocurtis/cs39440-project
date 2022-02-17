@@ -28,3 +28,12 @@ https://www.scirp.org/journal/paperinformation.aspx?paperid=90911
 "Image Quality Assessment by Comparing CNN Features between Images"
 https://www1.icsi.berkeley.edu/~stellayu/publication/doc/2016qualityJIST.pdf
 	New (as of 2016) AI based IQAA (FR)
+
+"Applicability of Existing Objective Metrics of Perceptual Quality for Adaptive Video Streaming"
+http://hal.univ-nantes.fr/hal-01395510/file/applicability_of_existing_etc_iqsp_revised_1.3.pdf
+	Breakdown of IQAA for videos
+	
+"Preliminary Image Compression Results from the Mars Exploration Rovers"
+https://ipnpr.jpl.nasa.gov/progress_report/42-156/156I.pdf
+	Look into image compression on previous mars rovers (establish amount of compression and what distortions were applied)
+	
