@@ -20,3 +20,5 @@
 > ### Week 3 (14th Feb - 20th Feb):
 > 
 > Monday - Saturday: Reading into IQAA, also looked into creating bitmaps from images (thinking ahead to when trying to write scripts for data analysis)
+>
+> Saturday: Created a short test script to convert PNG to BMP, development for when statistical analysis is required
