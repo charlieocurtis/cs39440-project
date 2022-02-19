@@ -19,4 +19,4 @@
 
 > ### Week 3 (14th Feb - 20th Feb):
 > 
-> Monday - Sunday: Reading into IQAA
+> Monday - Saturday: Reading into IQAA
