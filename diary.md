@@ -19,4 +19,4 @@
 
 > ### Week 3 (14th Feb - 20th Feb):
 > 
-> Monday - Saturday: Reading into IQAA
+> Monday - Saturday: Reading into IQAA, also looked into creating bitmaps from images (thinking ahead to when trying to write scripts for data analysis)
