@@ -14,3 +14,9 @@
 > Thursday: Started research into Image Quality Assessment Algorithms (IQAA) specifically.
 > 
 > Friday: Project outline submitted and continued reading into IQAA
+> 
+> Saturday - Sunday: Reading into IQAA
+
+> ### Week 3 (14th Feb - 20th Feb):
+> 
+> Monday - Sunday: Reading into IQAA
