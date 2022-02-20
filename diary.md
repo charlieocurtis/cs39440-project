@@ -22,3 +22,6 @@
 > Monday - Saturday: Reading into IQAA, also looked into creating bitmaps from images (thinking ahead to when trying to write scripts for data analysis)
 >
 > Saturday: Created a short test script to convert PNG to BMP, development for when statistical analysis is required
+> 
+> Sunday: More reading - also added functionality to script to create text file with pixel values, helps to calculate MSE for IQAA (Still need to find how to do
+> this for non-bmp image files)
