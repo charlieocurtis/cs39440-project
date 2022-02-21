@@ -25,3 +25,5 @@
 > 
 > Sunday: More reading - also added functionality to script to create text file with pixel values, helps to calculate MSE for IQAA (Still need to find how to do
 > this for non-bmp image files)
+
+> ### Week 4 (21st Feb - 27th Feb):
