@@ -25,5 +25,8 @@
 > 
 > Sunday: More reading - also added functionality to script to create text file with pixel values, helps to calculate MSE for IQAA (Still need to find how to do
 > this for non-bmp image files)
+> 
+>         Developed understanding for Mean Square Error (MSE) and therefore as by-product Root Mean Square Error (RMSE) and Peak Signal to Noise Ratio (PSNR) - 
+>         along with development of basic test script now have primitive method of conducting pixel to pixel analysis on at least PNG and BMP images.
 
 > ### Week 4 (21st Feb - 27th Feb):
