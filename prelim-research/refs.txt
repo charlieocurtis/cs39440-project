@@ -5,6 +5,8 @@ https://www.liebertpub.com/doi/full/10.1089/ast.2016.1548
 Compression Algorithm currently used in PanCam:
 https://essr.esa.int/project/whitedwarf
 https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Onboard_Data_Processing/Data_Compression_Tools
+https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Onboard_Data_Processing/CCSDS_Image_Data_Compression_ASIC
+https://public.ccsds.org/Pubs/122x0b2.pdf
 
 Quantization:
 https://www.youtube.com/watch?v=O0suOccKLbs
