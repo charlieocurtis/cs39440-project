@@ -37,3 +37,6 @@ http://hal.univ-nantes.fr/hal-01395510/file/applicability_of_existing_etc_iqsp_r
 https://ipnpr.jpl.nasa.gov/progress_report/42-156/156I.pdf
 	Look into image compression on previous mars rovers (establish amount of compression and what distortions were applied)
 	
+"IMAGE DATA COMPRESSION"
+https://public.ccsds.org/Pubs/122x0b2.pdf
+	The CCSDS standard for an image compression algo, applied to ESA's whitedwarf (gives a standard for quality of images (benchmark for IQAAs))
