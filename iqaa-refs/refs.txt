@@ -36,6 +36,7 @@ http://hal.univ-nantes.fr/hal-01395510/file/applicability_of_existing_etc_iqsp_r
 "The new CCSDS image compression recommendation"
 https://ieeexplore.ieee.org/abstract/document/1559719
 	2005 - Discusses Discrete Wavelet Transform (DWT) and Bit Plane Encoder (BPE)
+	
 "Preliminary Image Compression Results from the Mars Exploration Rovers"
 https://ipnpr.jpl.nasa.gov/progress_report/42-156/156I.pdf
 	Look into image compression on previous mars rovers (establish amount of compression and what distortions were applied)
