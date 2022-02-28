@@ -43,3 +43,9 @@ https://ipnpr.jpl.nasa.gov/progress_report/42-156/156I.pdf
 "IMAGE DATA COMPRESSION"
 https://public.ccsds.org/Pubs/122x0b2.pdf
 	The CCSDS standard for an image compression algo, applied to ESA's whitedwarf (gives a standard for quality of images (benchmark for IQAAs))
+
+"Automatic Image Quality Assessment in Python"
+https://towardsdatascience.com/automatic-image-quality-assessment-in-python-391a6be52c11
+	Python library for Image Quality Assessment - "BRISQUE relies on spatial Natural Scene Statistics (NSS) model of locally normalized luminance coefficients in
+	the spatial domain, as well as the model for pairwise products of these coefficients."
+
