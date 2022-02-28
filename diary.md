@@ -30,3 +30,7 @@
 >         along with development of basic test script now have primitive method of conducting pixel to pixel analysis on at least PNG and BMP images.
 
 > ### Week 4 (21st Feb - 27th Feb):
+> 
+> Monday - Sunday: Reading
+
+> ### Week 5 (28th Feb - 6th March):
