@@ -31,7 +31,7 @@ https://www1.icsi.berkeley.edu/~stellayu/publication/doc/2016qualityJIST.pdf
 
 "Applicability of Existing Objective Metrics of Perceptual Quality for Adaptive Video Streaming"
 http://hal.univ-nantes.fr/hal-01395510/file/applicability_of_existing_etc_iqsp_revised_1.3.pdf
-	Comparison of various IQAA in scenarios that are not optimal for such algorithms
+	Comparison of various IQAA in scenarios that are not optimal for such algorithms i.e., image based methods assessing videos
 	
 "The new CCSDS image compression recommendation"
 https://ieeexplore.ieee.org/abstract/document/1559719
