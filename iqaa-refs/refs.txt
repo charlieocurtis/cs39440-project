@@ -53,3 +53,7 @@ https://towardsdatascience.com/automatic-image-quality-assessment-in-python-391a
 "Tampere Image Database (TID2008)"
 https://qualinet.github.io/databases/image/tampere_image_database_tid2008/
 	Popular database of sample images (could be used to compare results of analysis against images from the rover)
+
+"Retinal Image Quality Assessment by Mean-Subtracted Contrast-Normalized Coefficients"
+https://agaldran.github.io/pdf/vip_image_galdran.pdf
+	An algorithm used in aforementioned python library
