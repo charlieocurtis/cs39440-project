@@ -57,3 +57,7 @@ https://qualinet.github.io/databases/image/tampere_image_database_tid2008/
 "Retinal Image Quality Assessment by Mean-Subtracted Contrast-Normalized Coefficients"
 https://agaldran.github.io/pdf/vip_image_galdran.pdf
 	An algorithm used in aforementioned python library
+
+Something on Natural Scene Statistics (NSS)
+https://www.cs.utexas.edu/users/dana/CogLect06.pdf
+	Used/mentioned in description of aforementioned Python IQA library
