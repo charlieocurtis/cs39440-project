@@ -47,8 +47,8 @@ https://public.ccsds.org/Pubs/122x0b2.pdf
 
 "Automatic Image Quality Assessment in Python"
 https://towardsdatascience.com/automatic-image-quality-assessment-in-python-391a6be52c11
-	Python library for Image Quality Assessment - "BRISQUE relies on spatial Natural Scene Statistics (NSS) model of locally normalized luminance coefficients in
-	the spatial domain, as well as the model for pairwise products of these coefficients."
+	Python library for Image Quality Assessment - "BRISQUE relies on spatial Natural Scene Statistics (NSS) model of locally normalized luminance coefficients
+	in the spatial domain, as well as the model for pairwise products of these coefficients."
 
 "Tampere Image Database (TID2008)"
 https://qualinet.github.io/databases/image/tampere_image_database_tid2008/
@@ -61,3 +61,7 @@ https://agaldran.github.io/pdf/vip_image_galdran.pdf
 Something on Natural Scene Statistics (NSS)
 https://www.cs.utexas.edu/users/dana/CogLect06.pdf
 	Used/mentioned in description of aforementioned Python IQA library
+
+"How to Calculate Mean Squared Error in Python"
+https://datagy.io/mean-squared-error-python/
+	Tutorial on using libraries to calculate mse/using numoy to create function to do so
