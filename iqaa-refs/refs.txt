@@ -65,3 +65,7 @@ https://www.cs.utexas.edu/users/dana/CogLect06.pdf
 "How to Calculate Mean Squared Error in Python"
 https://datagy.io/mean-squared-error-python/
 	Tutorial on using libraries to calculate mse/using numoy to create function to do so
+
+Convert method in PIL library
+https://pillow.readthedocs.io/en/stable/reference/Image.html?highlight=convert#PIL.Image.Image.convert
+	PIL documentation for 'convert' method when converting an image to greyscale to calculate MSE
