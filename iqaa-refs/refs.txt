@@ -69,3 +69,7 @@ https://datagy.io/mean-squared-error-python/
 Convert method in PIL library
 https://pillow.readthedocs.io/en/stable/reference/Image.html?highlight=convert#PIL.Image.Image.convert
 	PIL documentation for 'convert' method when converting an image to greyscale to calculate MSE
+
+SKLearn (Utilized python library) definition of which MSE calculation used
+https://scikit-learn.org/stable/modules/model_evaluation.html#mean-squared-error
+	Used to check calculation matches that which is described in other papers
