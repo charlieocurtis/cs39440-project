@@ -34,3 +34,12 @@
 > Monday - Sunday: Reading
 
 > ### Week 5 (28th Feb - 6th March):
+> Monday - Thursday: Reading0
+>
+> Friday: Minor updates to report template (pulled changes from module GitLab)
+>
+> Saturday: Major updates to development script to incorporate MSE calculation and tested against PNG/BMP/JPG varaiants of the same image
+>
+>         Script needs some refactoring/tidying-up, JPG image variant was acquired using online converter at this location: https://www.freeconvert.com/
+>         assumption made that JPG-2000 conversion algorithm used, minimum testing done to validate that there is no difference between PNG and BMP (and results)
+>         in MSE of 0.0, and there is difference between PNG and JPG and so MSE > 0.
