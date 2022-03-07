@@ -40,3 +40,6 @@ https://ieeexplore.ieee.org/abstract/document/8847307
 
 Uni guide to referencing styles:
 https://libguides.aber.ac.uk/c.php?g=676952&p=4823317
+
+Absolute basics of computer based image representation
+https://www.bbc.co.uk/bitesize/guides/zqyrq6f/revision/2
