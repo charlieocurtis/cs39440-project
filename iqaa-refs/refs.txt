@@ -73,3 +73,10 @@ https://pillow.readthedocs.io/en/stable/reference/Image.html?highlight=convert#P
 SKLearn (Utilized python library) definition of which MSE calculation used
 https://scikit-learn.org/stable/modules/model_evaluation.html#mean-squared-error
 	Used to check calculation matches that which is described in other papers
+
+General:
+Image Quality Assessment Metrics based on Distortion Measures
+https://www.ijesi.org/papers/NCIOT-2018/Volume-1/10.%2052-58.pdf
+
+Comparison of Image Quality Assessment: PSNR, HVS, SSIM, UIQI
+https://www.ijser.org/researchpaper/Comparison-of-Image-Quality-Assessment-PSNR-HVS-SSIM-UIQI.pdf
