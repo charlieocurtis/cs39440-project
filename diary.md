@@ -43,3 +43,6 @@
 >         Script needs some refactoring/tidying-up, JPG image variant was acquired using online converter at this location: https://www.freeconvert.com/
 >         assumption made that JPG-2000 conversion algorithm used, minimum testing done to validate that there is no difference between PNG and BMP (and results)
 >         in MSE of 0.0, and there is difference between PNG and JPG and so MSE > 0.
+
+
+> ### Week 6 (7th Mar - 13th Mar):
