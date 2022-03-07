@@ -49,4 +49,4 @@
 > ### Week 6 (7th Mar - 13th Mar):
 >
 > Monday - Source came through from the library, have begun reading this, also continued general reading process and found good potential source on subjective assessment
-> methods
+> methods, also cleaned up script
