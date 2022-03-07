@@ -80,3 +80,6 @@ https://www.ijesi.org/papers/NCIOT-2018/Volume-1/10.%2052-58.pdf
 
 Comparison of Image Quality Assessment: PSNR, HVS, SSIM, UIQI
 https://www.ijser.org/researchpaper/Comparison-of-Image-Quality-Assessment-PSNR-HVS-SSIM-UIQI.pdf
+
+Formula for normalizing a set of values (will be useful when it comes to doing stats on results once collected)
+https://www.statology.org/normalize-data-between-0-and-1/
