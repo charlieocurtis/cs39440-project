@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8f01927-cf18-4a7e-9aa0-aa5f02c88e74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/.idea/png_to_bmp_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/luminance-out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/test_image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../png_to_bmp_test/test_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

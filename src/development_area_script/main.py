@@ -1,41 +1,35 @@
-import pandas
 from PIL import Image
+from sklearn.metrics import mean_squared_error
 
 import numpy as np
 import pandas as pd
-from sklearn.metrics import mean_squared_error
 
 PNG_FILE = "test_image.png"
 BMP_FILE = "test_image.bmp"
 JPG_FILE = "test_image.jpg"
 BMP_PIX_WRITE = "output.txt"
 LUMINANCE_WRITE = "luminance-out.txt"
-LUMINANCE_DF = pandas.DataFrame()
+LUMINANCE_DF = pd.DataFrame()
 
 
 def png_to_bmp(input_file, output_file):
     # collect the png file
     image = Image.open(input_file)
 
-    # convert the png into bmp
+    # save the png into bmp
     image.save(output_file)
 
 
 def collect_bmp_pixel_vals(image_to_open):
-    # collect each pixel rgb values and put into list
+    # collect each pixel rgb values and put into np array
     # in the case of png image this also contains alpha field
-    bmp_pix_vals = list(Image.open(image_to_open).getdata())
+    bmp_pix_vals = np.asarray(Image.open(image_to_open).getdata())
     return bmp_pix_vals
 
 
-def collect_bmp_luminance_vals(image_to_open: Image):
+def collect_luminance_vals(image_to_open: Image):
     # converts image to grey scale and then collects luminance values
-    # can now calculate MSE
-    luminance = np.asarray(Image.open(image_to_open).convert("L"))
-    return luminance
-
-
-def collect_png_luminance_vals(image_to_open: Image):
+    # conversion method in docs
     luminance = np.asarray(Image.open(image_to_open).convert("L"))
     return luminance
 
@@ -52,7 +46,6 @@ def write_luminance_vals(filename, luminance_vals):
     # counter is for debugging purposes when trying to establish
     # how the library is outputting data into the given text file
     # counter = 0
-
     with open(filename, "w") as file:
         for line in luminance_vals:
             file.write(str(line))
@@ -61,8 +54,10 @@ def write_luminance_vals(filename, luminance_vals):
 
 
 def calculate_mse():
-    luminance_bmp_df = pandas.DataFrame(collect_bmp_luminance_vals(PNG_FILE))
-    luminance_png_df = pandas.DataFrame(collect_png_luminance_vals(JPG_FILE))
+    # placing the luminance values for both images into pandas dataframes
+    # since can be used in mean_squared_error function
+    luminance_bmp_df = pd.DataFrame(collect_luminance_vals(PNG_FILE))
+    luminance_png_df = pd.DataFrame(collect_luminance_vals(JPG_FILE))
     return mean_squared_error(luminance_png_df, luminance_bmp_df)
 
 
@@ -70,7 +65,7 @@ def main():
     # png_to_bmp(PNG_FILE, BMP_FILE)
     # collect_bmp_pixel_vals(BMP_FILE)
     # collect_bmp_luminance_vals(BMP_FILE)
-    print(calculate_mse())
+    # print(calculate_mse())
 
     # looking for physical pixel differences between png/bmp variant and jpg variant
     # since jpg has known compression algorithm good image type for testing
