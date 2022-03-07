@@ -34,7 +34,8 @@
 > Monday - Sunday: Reading
 
 > ### Week 5 (28th Feb - 6th March):
-> Monday - Thursday: Reading0
+>
+> Monday - Thursday: Reading
 >
 > Friday: Minor updates to report template (pulled changes from module GitLab)
 >
@@ -46,3 +47,6 @@
 
 
 > ### Week 6 (7th Mar - 13th Mar):
+>
+> Monday - Source came through from the library, have begun reading this, also continued general reading process and found good potential source on subjective assessment
+> methods
