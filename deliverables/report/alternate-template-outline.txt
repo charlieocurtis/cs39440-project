@@ -1,0 +1,35 @@
+- Title Page
+- Declaration/Consent
+- Acknowledgements
+- Abstract
+- Contents
+
+- Background/Analysis/Process
+	This will most likely be as per the original report template
+
+- Method
+	Original template talks about the method of some 'experiment' that is performed however, 
+	this doesn't fit the scope of this project so most likely discuss:
+		- Briefly talk about the subjective study (obviously referencing the document that was sent to me)
+		- What sort of numerical analysis has been chosen and why
+		- How the process of numerical analysis was conducted
+		- Maybe also discuss the creation of the script I am using here, although might be better suited
+		to somewhere else in the report??
+- Results
+	Demonstrate findings, visualising data (graphs, tables, images, etc.)
+
+- Analysis
+	Discuss what the results mean, what they tell us, how this might relate back to PanCam
+	also any problems with the whole process, things that may be improved (specifically in the context of the process -
+	improvements that may be made to the execution of the research. Improvements that may be made when discussing
+	in the context of a final year project/as part of the CS39440 module, will come under critical evaluation)
+	Finally, routes/avenues for further investigation that could build from this research
+
+- Critical Evaluation
+	Evaluation in the context of the final year project as previously mentioned
+
+- References
+	As per the original template
+
+- Appendices
+	As per the original template
