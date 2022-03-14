@@ -89,6 +89,10 @@ https://www.worldscientific.com/doi/epdf/10.1142/9789812831200_0010
 A Perceptual Distortion Metric for Digital Color Video
 https://stefan.winklerbros.net/Publications/hvei1999.pdf
 	A metric for IQA with colour images
+	
+A new universal colour image fidelity metric
+https://reader.elsevier.com/reader/sd/pii/S0141938204000071?token=D5075DC3A237856ED6D77010A368238C6ECD9B683D0BAC9D652ED3611CB6BAF0AA4EA37E25100DEF109CAB940C4D7DC8&originRegion=eu-west-1&originCreation=20220314153504
+	Paper assessing the viability of a colour image quality assessment algorithm
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
