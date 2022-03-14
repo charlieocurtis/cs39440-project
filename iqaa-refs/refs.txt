@@ -103,3 +103,5 @@ https://www.ijser.org/researchpaper/Comparison-of-Image-Quality-Assessment-PSNR-
 
 Formula for normalizing a set of values (will be useful when it comes to doing stats on results once collected)
 https://www.statology.org/normalize-data-between-0-and-1/
+
+https://humansystems.arc.nasa.gov/publications/sid93.pdf
