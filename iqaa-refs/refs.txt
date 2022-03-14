@@ -78,9 +78,13 @@ Comparison of Four Subjective Methods for Image Quality Assessment
 https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8659.2012.03188.x?casa_token=_2Fr_Sak5wcAAAAA%3A4U7gyh9Kz-Qp47AFnkUS-VDHsz3izMPuv7fHLZMTRsYQ4CuKF5-VfJ9dsEE5xVOwd3wko0AdbIOZoBuL
 	Comparison of subjective methods, also discusses recommended best practices for data analysis, good when analysis process begins
 	
-Probability of detection of differences (FR - Daly)
+Visible differences predictor: an algorithm for the assessment of image fidelity
 https://www.spiedigitallibrary.org/conference-proceedings-of-spie/1666/0000/Visible-differences-predictor--an-algorithm-for-the-assessment-of/10.1117/12.135952.short?SSO=1
-	Algorithm produces probability map of detecting differences between a reference and subject image
+	The Daly model for predicitng probability of error detection
+	
+A VISUAL DISCRIMINATION MODEL FOR IMAGING SYSTEM DESIGN AND EVALUATION
+https://www.worldscientific.com/doi/epdf/10.1142/9789812831200_0010
+	The Lubin model for predicting probability of error detection
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
