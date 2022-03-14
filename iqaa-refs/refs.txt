@@ -85,6 +85,10 @@ https://www.spiedigitallibrary.org/conference-proceedings-of-spie/1666/0000/Visi
 A VISUAL DISCRIMINATION MODEL FOR IMAGING SYSTEM DESIGN AND EVALUATION
 https://www.worldscientific.com/doi/epdf/10.1142/9789812831200_0010
 	The Lubin model for predicting probability of error detection
+	
+A Perceptual Distortion Metric for Digital Color Video
+https://stefan.winklerbros.net/Publications/hvei1999.pdf
+	A metric for IQA with colour images
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
