@@ -77,6 +77,10 @@ https://scikit-learn.org/stable/modules/model_evaluation.html#mean-squared-error
 Comparison of Four Subjective Methods for Image Quality Assessment
 https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8659.2012.03188.x?casa_token=_2Fr_Sak5wcAAAAA%3A4U7gyh9Kz-Qp47AFnkUS-VDHsz3izMPuv7fHLZMTRsYQ4CuKF5-VfJ9dsEE5xVOwd3wko0AdbIOZoBuL
 	Comparison of subjective methods, also discusses recommended best practices for data analysis, good when analysis process begins
+	
+Probability of detection of differences (FR - Daly)
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/1666/0000/Visible-differences-predictor--an-algorithm-for-the-assessment-of/10.1117/12.135952.short?SSO=1
+	Algorithm produces probability map of detecting differences between a reference and subject image
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
