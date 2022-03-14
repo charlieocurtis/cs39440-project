@@ -1,2 +1,4 @@
 Evaluations for analysis:
 - Pearsons Correlation Coefficient
+- T-Test
+
