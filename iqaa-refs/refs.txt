@@ -93,6 +93,21 @@ https://stefan.winklerbros.net/Publications/hvei1999.pdf
 A new universal colour image fidelity metric
 https://reader.elsevier.com/reader/sd/pii/S0141938204000071?token=D5075DC3A237856ED6D77010A368238C6ECD9B683D0BAC9D652ED3611CB6BAF0AA4EA37E25100DEF109CAB940C4D7DC8&originRegion=eu-west-1&originCreation=20220314153504
 	Paper assessing the viability of a colour image quality assessment algorithm
+	
+The Research of Digital Color Image Quality Metrics
+https://link.springer.com/chapter/10.1007/978-3-642-31528-2_63
+
+Design and Implementation of Visual Communication Systems for Images and Videos using Just-Noticeable Difference (JND) Visual Masking Model
+http://ijcsn.org/IJCSN-2020/9-4/Design-and-Implementation-of-Visual-Communication-Systems-for-Images-and-Videos-using-Just-Noticeable-Difference-JND-Visual-Masking-Model.pdf
+
+Subjective evaluation of image quality measures for white noise and Gaussian blur-distorted images
+https://www.tandfonline.com/doi/abs/10.1179/1743131X11Y.0000000044?journalCode=yims20
+
+Using similarity measures and homogeneity for the comparison of images
+https://www.sciencedirect.com/science/article/pii/S0262885604000551?via%3Dihub
+
+Statistical evaluation of image quality measures
+https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-11/issue-2/0000/Statistical-evaluation-of-image-quality-measures/10.1117/1.1455011.short?SSO=1
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
