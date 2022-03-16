@@ -2,3 +2,6 @@ Evaluations for analysis:
 - Pearsons Correlation Coefficient
 - T-Test
 
+Prelim Experimentation:
+First sample image onverted from PNG to JPG using PILLOW - Size dropped from ~1.2mil bytes to ~217k bytes using RGB conversion, however with greyscale conversion
+(since image is greyscale) dropped further to ~212k bytes, MSE for original PNG and this version of the JPG was 106.72708225250244.
