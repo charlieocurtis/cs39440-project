@@ -54,4 +54,6 @@
 
 > ### Week 7 (14th Mar - 20th Mar):
 >
-> Monday - Wednesday: Reading
+> Monday - Tuesday: Reading
+>
+> Wednesday: Converted first sampole image to JPG using script. Checked details using image inspect tool (macOS Preview tool) 
