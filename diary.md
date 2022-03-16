@@ -42,11 +42,16 @@
 > Saturday: Major updates to development script to incorporate MSE calculation and tested against PNG/BMP/JPG varaiants of the same image
 >
 >         Script needs some refactoring/tidying-up, JPG image variant was acquired using online converter at this location: https://www.freeconvert.com/
->         assumption made that JPG-2000 conversion algorithm used, minimum testing done to validate that there is no difference between PNG and BMP (and results)
->         in MSE of 0.0, and there is difference between PNG and JPG and so MSE > 0.
-
+>         assumption made that standard JPG conversion algorithm used, minimum testing done to validate that there is no difference between PNG and BMP (and
+>         results) in MSE of 0.0, and there is difference between PNG and JPG and so MSE > 0.
 
 > ### Week 6 (7th Mar - 13th Mar):
 >
 > Monday - Source came through from the library, have begun reading this, also continued general reading process and found good potential source on subjective assessment
 > methods, also cleaned up script
+>
+> Tuesday - Sunday: Reading
+
+> ### Week 7 (14th Mar - 20th Mar):
+>
+> Monday - Wednesday: Reading
