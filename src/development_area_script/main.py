@@ -3,6 +3,7 @@ from sklearn.metrics import mean_squared_error
 
 import numpy as np
 import pandas as pd
+import sample_images.image_init as sample
 
 PNG_FILE = "test_image.png"
 BMP_FILE = "test_image.bmp"
@@ -18,6 +19,14 @@ def png_to_bmp(input_file, output_file):
 
     # save the png into bmp
     image.save(output_file)
+
+
+def png_to_jpg(input_file, output_file):
+    # collect a sample image to convert rto jpg
+    image = sample.LWAC01_PNG
+    # solution for a workaround of a bug found at: https://stackoverflow.com/a/7248480
+    image.mode = 'I'
+    image.point(lambda i:i*(1./256)).convert('L').save(sample.LWAC01_JPG)
 
 
 def collect_bmp_pixel_vals(image_to_open):
@@ -66,6 +75,7 @@ def main():
     # collect_bmp_pixel_vals(BMP_FILE)
     # collect_bmp_luminance_vals(BMP_FILE)
     # print(calculate_mse())
+    png_to_jpg(sample.LWAC01_PNG, sample.LWAC01_JPG)
 
     # looking for physical pixel differences between png/bmp variant and jpg variant
     # since jpg has known compression algorithm good image type for testing
