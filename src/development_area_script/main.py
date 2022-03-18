@@ -21,7 +21,7 @@ def png_to_bmp(input_file, output_file):
     image.save(output_file)
 
 
-def png_to_jpg(input_file, output_file):
+def png_to_jpg():
     # collect a sample image to convert rto jpg
     image = sample.LWAC01_PNG
     # solution for a workaround of a bug found at: https://stackoverflow.com/a/7248480
@@ -62,11 +62,11 @@ def write_luminance_vals(filename, luminance_vals):
             # counter += 1
 
 
-def calculate_mse():
+def calculate_mse(reference_image, subject_image):
     # placing the luminance values for both images into pandas dataframes
     # since can be used in mean_squared_error function
-    luminance_bmp_df = pd.DataFrame(collect_luminance_vals(PNG_FILE))
-    luminance_png_df = pd.DataFrame(collect_luminance_vals(JPG_FILE))
+    luminance_bmp_df = pd.DataFrame(collect_luminance_vals(subject_image))
+    luminance_png_df = pd.DataFrame(collect_luminance_vals(reference_image))
     return mean_squared_error(luminance_png_df, luminance_bmp_df)
 
 
@@ -75,7 +75,8 @@ def main():
     # collect_bmp_pixel_vals(BMP_FILE)
     # collect_bmp_luminance_vals(BMP_FILE)
     # print(calculate_mse())
-    png_to_jpg(sample.LWAC01_PNG, sample.LWAC01_JPG)
+    # png_to_jpg(sample.LWAC01_PNG, sample.LWAC01_JPG)
+    print(calculate_mse("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png", "LWAC01_JPG.jpg"))
 
     # looking for physical pixel differences between png/bmp variant and jpg variant
     # since jpg has known compression algorithm good image type for testing

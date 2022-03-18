@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8f01927-cf18-4a7e-9aa0-aa5f02c88e74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sample_images/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample_images/image_init.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpg-output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/luminance-out.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_image.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,16 +74,5 @@
       <updated>1645278782663</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
