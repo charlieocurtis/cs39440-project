@@ -58,3 +58,7 @@
 >
 > Wednesday: Converted first sampole image to JPG using script. Checked details using image inspect tool (macOS Preview tool), moreover conducted some basic
 > analysis using the script constructed in the first few weeks of the project to find MSE. Can develop further to get PSNR and other basic IQAAs.
+>
+> Thursday - Reading
+>
+> Friday - Began writing report
