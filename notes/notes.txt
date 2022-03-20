@@ -7,3 +7,16 @@ First sample image onverted from PNG to JPG using PILLOW - Size dropped from ~1.
 (since image is greyscale) dropped further to ~212k bytes, MSE for original PNG and this version of the JPG was 106.72708225250244.
 
 APA citation system (numeric)
+
+Notes on demo:
+- Introduce project
+  - Background
+  - Goal
+- IQAAs
+  - Classification of algorithms
+    - Traits of such classifications
+  - Discuss the basic control algorithms
+  - Discuss the possibility of incorporating more advanced methods
+- Talk about doing comparisons and trying to present the results of the investigation
+- Show what happens for PNG to JPG conversion
+  - Create compartive images for various image conversions
