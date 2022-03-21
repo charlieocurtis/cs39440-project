@@ -59,6 +59,11 @@
 > Wednesday: Converted first sampole image to JPG using script. Checked details using image inspect tool (macOS Preview tool), moreover conducted some basic
 > analysis using the script constructed in the first few weeks of the project to find MSE. Can develop further to get PSNR and other basic IQAAs.
 >
-> Thursday - Reading
+> Thursday: Reading
 >
-> Friday - Began writing report
+> Friday: Began writing report
+>
+> Saturday - Sunday: Reading, continued writing report, and prep for mid project demo
+
+> ### Week 8 (21st Mar - 27th Mar):
+> Monday: Prep for mid project demo
