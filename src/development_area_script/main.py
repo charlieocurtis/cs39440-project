@@ -23,10 +23,10 @@ def png_to_bmp(input_file, output_file):
 
 def png_to_jpg():
     # collect a sample image to convert rto jpg
-    image = sample.LWAC01_PNG
+    image = sample.LWAC03_PNG
     # solution for a workaround of a bug found at: https://stackoverflow.com/a/7248480
     image.mode = 'I'
-    image.point(lambda i:i*(1./256)).convert('L').save(sample.LWAC01_JPG)
+    image.point(lambda i:i*(1./256)).convert('L').save(sample.LWAC03_JPG)
 
 
 def collect_bmp_pixel_vals(image_to_open):
@@ -75,13 +75,8 @@ def main():
     # collect_bmp_pixel_vals(BMP_FILE)
     # collect_bmp_luminance_vals(BMP_FILE)
     # print(calculate_mse())
-    # png_to_jpg(sample.LWAC01_PNG, sample.LWAC01_JPG)
-    print(calculate_mse("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png", "LWAC01_JPG.jpg"))
-
-    # looking for physical pixel differences between png/bmp variant and jpg variant
-    # since jpg has known compression algorithm good image type for testing
-    # png variant was put through online conversion at: https://www.freeconvert.com/
-    # mse for png and jpg variants = 1.0559869541551807
+    png_to_jpg()
+    # print(calculate_mse("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png", "LWAC01_JPG.jpg"))
 
     # write_bmp_pixel_vals(BMP_PIX_WRITE, collect_bmp_pixel_vals(BMP_FILE))
     # write_bmp_pixel_vals("jpg-output.txt", collect_bmp_pixel_vals(JPG_FILE))
