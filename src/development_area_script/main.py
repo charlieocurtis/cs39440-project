@@ -75,8 +75,8 @@ def main():
     # collect_bmp_pixel_vals(BMP_FILE)
     # collect_bmp_luminance_vals(BMP_FILE)
     # print(calculate_mse())
-    png_to_jpg()
-    # print(calculate_mse("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png", "LWAC01_JPG.jpg"))
+    # png_to_jpg()
+    print(calculate_mse("sample_images/comptest_objects2-sandpit2_LWAC03_T00_P00.png", "LWAC03_JPG.jpg"))
 
     # write_bmp_pixel_vals(BMP_PIX_WRITE, collect_bmp_pixel_vals(BMP_FILE))
     # write_bmp_pixel_vals("jpg-output.txt", collect_bmp_pixel_vals(JPG_FILE))
