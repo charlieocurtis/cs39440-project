@@ -23,7 +23,7 @@ def png_to_bmp(input_file, output_file):
 
     # save the png into bmp
     image.mode = 'I'
-    image.point(lambda i:i*(1./256)).convert('L').save("LWAC01.bmp")
+    image.point(lambda i: i * (1. / 256)).convert('L').save("LWAC01.bmp")
 
 
 def png_to_jpg():
@@ -31,7 +31,7 @@ def png_to_jpg():
     image = sample.LWAC03_PNG
     # solution for a workaround of a bug found at: https://stackoverflow.com/a/7248480
     image.mode = 'I'
-    image.point(lambda i:i*(1./256)).convert('L').save(sample.LWAC03_JPG)
+    image.point(lambda i: i * (1. / 256)).convert('L').save(sample.LWAC03_JPG)
 
 
 def jpg_to_png():
@@ -46,14 +46,21 @@ def collect_bmp_pixel_vals():
     return bmp_pix_vals
 
 
-def collect_luminance_vals(target_image):
+def collect_luminance_vals_8bit(target_image):
     # converts image to grey scale and then collects luminance values
     # conversion method in docs
     luminance = np.asarray(Image.open(target_image).convert("L"))
     return luminance
 
 
+def collect_luminance_vals_16bit(target_image):
+    # conversion argument different for 16 bit AUPE images
+    luminance = np.asarray(Image.open(target_image).convert("I;16"))
+    return luminance
+
+
 def write_bmp_pixel_vals(filename, pixel_vals):
+    # mainly used for debugging
     # write each tuple to the output file ready to be read and compared with original
     with open(filename, "w") as file:
         for rgb in pixel_vals:
@@ -75,60 +82,43 @@ def write_luminance_vals(filename, luminance_vals):
 def calculate_mse(reference_image, subject_image):
     # placing the luminance values for both images into pandas dataframes
     # since can be used in mean_squared_error function
-    luminance_bmp_df = pd.DataFrame(collect_luminance_vals(subject_image))
-    luminance_png_df = pd.DataFrame(collect_luminance_vals(reference_image))
+    luminance_bmp_df = pd.DataFrame(collect_luminance_vals_8bit(subject_image))
+    luminance_png_df = pd.DataFrame(collect_luminance_vals_8bit(reference_image))
     return mean_squared_error(luminance_png_df, luminance_bmp_df)
 
 
-def calculate_difference():
-    image_one = "LWAC01_JPG_to_PNG.png"
-    image_two = "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"
+def calculate_difference(image_one, image_two):
+    # load first image
+    image_one_values = pd.DataFrame(collect_luminance_vals_8bit(image_one))
 
-    image_one_values = pd.DataFrame(collect_luminance_vals(image_one))
-    with open('image-one-output.txt', 'w') as file:
-        file.write(str(image_one_values))
+    # write pixel vals to file for debugging
+    # with open("image-one-output.txt", "w") as file:
+    #     file.write(str(image_one_values))
 
-    image_two_values = pd.DataFrame(np.asarray(Image.open(
-        'sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png').getdata()) * (1. / 256))
-    with open('image-two-values.txt', 'w') as file_two:
-        file_two.write(str(image_two_values))
+    # load second image
+    image_two_values = pd.DataFrame(collect_luminance_vals_16bit(image_two))
+    # convert from 16bit to 8bit
+    image_two_values = (image_two_values * 1.) / 256
 
-    resultant = pd.DataFrame(image_one_values - image_two_values)
+    # with open("image-two-output.txt", "w") as file:
+    #     file.write(str(image_two_values))
+
+    # return the absolute difference between the two images
+    resultant = pd.DataFrame(image_two_values - image_one_values)
 
     return resultant
 
 
-def create_bmp_from_array():
-    image_array = np.asarray(Image.open("LWAC01.bmp").getdata())
-    return image_array
-
-
-def find_mode():
-    image = Image.open("LWAC01_JPG_to_PNG.png")
+def find_mode(target_image):
+    # find the current mode of the required image
+    image = Image.open(target_image)
     print(image.mode)
 
 
 def main():
-    # print(np.asarray(Image.open("LWAC01.bmp").getdata()))
-    # find_mode()
-    # png_to_bmp("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png", "LWAC01.bmp")
-    # print(collect_bmp_pixel_vals())
-    # write_bmp_pixel_vals("output.txt", collect_bmp_pixel_vals())
-    # collect_bmp_luminance_vals(BMP_FILE)
-    # print(calculate_mse())
-    # png_to_jpg()
-    # print(calculate_mse("LWAC01_JPG.jpg", "LWAC01_JPG_to_PNG.png"))
-    # jpg_to_png()
-    # print(calculate_difference())
-
-    # print(str(np.asarray(Image.open('sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png').getdata()) * (1. / 256)))
-
-    print(np.asarray(calculate_difference()))
-    created_image = Image.fromarray(np.asarray(calculate_difference()))
+    created_image = Image.fromarray(np.asarray(calculate_difference("test_image.png",
+                                                        "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
     created_image.show()
-
-    # write_bmp_pixel_vals(BMP_PIX_WRITE, collect_bmp_pixel_vals(BMP_FILE))
-    # write_bmp_pixel_vals("jpg-output.txt", collect_bmp_pixel_vals(JPG_FILE))
 
 
 if __name__ == '__main__':
