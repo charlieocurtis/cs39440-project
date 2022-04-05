@@ -67,3 +67,17 @@
 
 > ### Week 8 (21st Mar - 27th Mar):
 > Monday: Prep for mid project demo
+> 
+> Tuesday: Mid Project demo
+>
+> Wednesday - Sunday: Actioning some of the feedback from the mid project demo to improve script and understanding of direction of project
+
+> ### Week 9 (28th Mar - 3rd Apr):
+>
+> Monday - Sunday: Progress was overall quite slow, issues with script but mainly access to materials needed to proceed with project. Started developing
+>                  contingency plans for possible project change, planned parts of report that am able to write at this stage but this is also quite
+>                  limited
+
+> ### Week 10 (4th Apr - 10th Apr):
+>
+> Monday
