@@ -124,3 +124,7 @@ Formula for normalizing a set of values (will be useful when it comes to doing s
 https://www.statology.org/normalize-data-between-0-and-1/
 
 https://humansystems.arc.nasa.gov/publications/sid93.pdf
+
+PIL Image modes
+https://pillow.readthedocs.io/en/stable/handbook/concepts.html#concept-modes
+
