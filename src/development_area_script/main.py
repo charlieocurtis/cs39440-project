@@ -1,5 +1,6 @@
-from PIL import Image, ImageOps
+from PIL import Image
 from sklearn.metrics import mean_squared_error
+from skimage.metrics import structural_similarity as ssim
 
 import sys
 import numpy as np
@@ -26,12 +27,21 @@ def png_to_bmp(input_file, output_file):
     image.point(lambda i: i * (1. / 256)).convert('L').save("LWAC01.bmp")
 
 
-def png_to_jpg():
+def png_to_jpg_16bit(target_image, save_name):
     # collect a sample image to convert to jpg
-    image = sample.LWAC03_PNG
+    image = Image.open(target_image)
     # solution for a workaround of a bug found at: https://stackoverflow.com/a/7248480
     image.mode = 'I'
-    image.point(lambda i: i * (1. / 256)).convert('L').save(sample.LWAC03_JPG)
+    image.point(lambda i: i * (1. / 256)).convert('L').save(save_name)
+
+
+def png_to_jpg_8bit(target_image, save_name):
+    image = Image.open(target_image).convert("L")
+    image.save(save_name)
+
+
+def convert_grey_8bit_png(target_image):
+    Image.open(target_image).convert("L").save("grey_version.png")
 
 
 def jpg_to_png():
@@ -82,9 +92,17 @@ def write_luminance_vals(filename, luminance_vals):
 def calculate_mse(reference_image, subject_image):
     # placing the luminance values for both images into pandas dataframes
     # since can be used in mean_squared_error function
-    luminance_bmp_df = pd.DataFrame(collect_luminance_vals_8bit(subject_image))
+    luminance_bmp_df = pd.DataFrame(collect_luminance_vals_16bit(subject_image))
     luminance_png_df = pd.DataFrame(collect_luminance_vals_8bit(reference_image))
     return mean_squared_error(luminance_png_df, luminance_bmp_df)
+
+
+def calculate_psnr(target_image, reference_image):
+    return (10 * (np.log(255 ** 2))) / calculate_mse(reference_image, target_image)
+
+
+def calculate_ssim(target_image, reference_image):
+    return ssim(target_image, reference_image)
 
 
 def calculate_difference(image_one, image_two):
@@ -116,9 +134,28 @@ def find_mode(target_image):
 
 
 def main():
-    created_image = Image.fromarray(np.asarray(calculate_difference("test_image.png",
-                                                        "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
-    created_image.show()
+    # generated_image = np.asarray(calculate_difference("test_image.png",
+    #                                                   "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"))
+    # created_image = Image.fromarray(generated_image)
+    # print(calculate_psnr(generated_image))
+    # created_image.show()
+
+    # image = "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"
+    # find_mode(image)
+
+    print("MSE: ")
+    print(calculate_mse('grey_version.png', 'test_image.jpg'))
+    print("PSNR: ")
+    print(f"{calculate_psnr('grey_version.png', 'test_image.jpg')} dB")
+    print("SSIM:")
+    print(calculate_ssim(collect_luminance_vals_8bit("grey_version.png"), collect_luminance_vals_8bit("test_image.jpg")))
+
+    # test_vals = collect_luminance_vals_8bit("test_image.png")
+    # write_luminance_vals(LUMINANCE_WRITE, test_vals)
+    # png_to_jpg_8bit("test_image.png", "test_image.jpg")
+    # write_luminance_vals("jpg-luminance-out.txt", collect_luminance_vals_8bit("test_image.jpg"))
+
+    # convert_grey_8bit_png("test_image.png")
 
 
 if __name__ == '__main__':
