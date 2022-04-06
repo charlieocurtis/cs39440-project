@@ -133,6 +133,10 @@ IMAGE INFORMATION AND VISUAL QUALITY
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1326643
 	Visual Information Fidelity (VIF)
 	
+Implementation of above IQAA
+https://github.com/pavancm/Visual-Information-Fidelity---Python
+	Visual Information Fidelity implementation
+	
 VSNR: A Wavelet-Based Visual Signal-to-Noise Ratio for Natural Images
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4286985
 	Visual Signal to Noise Ratio (VSNR)
