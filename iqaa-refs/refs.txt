@@ -116,6 +116,26 @@ https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume
 Context-dependent image quality assessment of JPEG compressed Mars Science Laboratory Mastcam images using convolutional neural networks
 https://reader.elsevier.com/reader/sd/pii/S0098300417309688?token=EC03D2F7D4446D876305601BBC6C2CFE8C3A84E08B33CC4A194CA504D59126A810B5F48E239EA1A63E49E91F55BBBBD6&originRegion=eu-west-1&originCreation=20220328114705
 	A Neural Network solution to determine the acceptable level of compression given the context of observation
+	
+A COMPREHENSIVE EVALUATION OF FULL REFERENCE IMAGE QUALITY ASSESSMENT ALGORITHMS
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6467150
+	Intro to 10 different IQAAs that arent MSE, PSNR or SSIM
+	
+Image Quality Assessment Based on a Degradation Model
+http://shiftleft.com/mirrors/www.hpl.hp.com/personal/Niranjan_Damera-Venkata/files/iq.pdf
+	Noise Quality Measure (NQM)
+	
+An Information Fidelity Criterion for Image Quality Assessment Using Natural Scene Statistics
+https://live.ece.utexas.edu/publications/2004/hrs_ieeetip_2004_infofidel.pdf
+	Information Fidelity Criterion Index (IFC)
+	
+IMAGE INFORMATION AND VISUAL QUALITY
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1326643
+	Visual Information Fidelity (VIF)
+	
+VSNR: A Wavelet-Based Visual Signal-to-Noise Ratio for Natural Images
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4286985
+	Visual Signal to Noise Ratio (VSNR)
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
