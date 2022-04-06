@@ -136,6 +136,10 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1326643
 VSNR: A Wavelet-Based Visual Signal-to-Noise Ratio for Natural Images
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4286985
 	Visual Signal to Noise Ratio (VSNR)
+	
+FSIM: A Feature Similarity Index for Image Quality Assessment
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5705575
+	Feature Similarity Index (FSIM) - had best results in aforementioned paper (paper containing intro to extra 10 IQAAs)
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
