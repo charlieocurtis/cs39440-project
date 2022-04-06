@@ -119,7 +119,7 @@ https://reader.elsevier.com/reader/sd/pii/S0098300417309688?token=EC03D2F7D4446D
 	
 A COMPREHENSIVE EVALUATION OF FULL REFERENCE IMAGE QUALITY ASSESSMENT ALGORITHMS
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6467150
-	Intro to 10 different IQAAs that arent MSE, PSNR or SSIM
+	Intro to 10 different IQAAs that arent MSE, PSNR or SSIM (also has section on common performance comparison metrics)
 	
 Image Quality Assessment Based on a Degradation Model
 http://shiftleft.com/mirrors/www.hpl.hp.com/personal/Niranjan_Damera-Venkata/files/iq.pdf
