@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a8f01927-cf18-4a7e-9aa0-aa5f02c88e74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converted_png.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/difference_map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image-one-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image-two-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpg-luminance-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/luminance-out.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
