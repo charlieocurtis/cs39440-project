@@ -20,3 +20,10 @@ Notes on demo:
 - Talk about doing comparisons and trying to present the results of the investigation
 - Show what happens for PNG to JPG conversion
   - Create compartive images for various image conversions
+  
+  PROJECT CHANGE:
+  =======================================================================================================================================================
+  
+  OpenJPEG compression ratio limit 9000
+  Need to find how to lossy compress to stop decompression creating image with reduced size
+  
