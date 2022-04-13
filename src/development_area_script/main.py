@@ -19,11 +19,11 @@ def check_colour_depth(subject_image):
     subject = Image.open(subject_image)
 
     # if 16bit return false
-    if subject.mode == 'I':
-        return False
+    if subject.mode == 'I' or 'I;16':
+        return convert_16bit_to_8bit(collect_greyscale_pixels(subject_image))
     # if 8bit return true
     elif subject.mode == 'L':
-        return True
+        return collect_greyscale_pixels(subject_image)
 
 
 def collect_greyscale_pixels(target_image):
@@ -37,7 +37,7 @@ def collect_greyscale_pixels(target_image):
         return np.array(image.convert('I;16').getdata()).reshape(image.size)
     # error zero return
     else:
-        return 0
+        return np.array(image.getdata()).reshape(image.size)
 
 
 def convert_16bit_to_8bit(image_array):
@@ -55,13 +55,13 @@ def write_pixel_values(image_array, save_file):
 
 def calculate_mse(perfect_reference_image, subject_image):
     # function to calculate Mean Squared Error
-    return mean_squared_error(collect_greyscale_pixels(perfect_reference_image),
-                              collect_greyscale_pixels(subject_image))
+    return mean_squared_error(check_colour_depth(perfect_reference_image),
+                              check_colour_depth(subject_image))
 
 
 def calculate_psnr(perfect_reference_image, subject_image):
     # function to calculate Peak Signal to Noise Ratio
-    return (10 * (np.log(255 ** 2))) / calculate_mse(perfect_reference_image, subject_image)
+    return (10 * (np.log10(255 ** 2))) / calculate_mse(perfect_reference_image, subject_image)
 
 
 def calculate_ssim(perfect_reference_image, subject_image):
@@ -87,7 +87,18 @@ def calculate_difference(original_image, new_image):
     return new_pixel_vals - original_pixel_vals
 
 
+def load_raw_image(raw_image_file):
+    image = np.fromfile(raw_image_file, dtype=np.uint16)
+    # filler = np.zeros(shape=(1, 33), dtype=np.uint16)
+    # image = np.append(arr=image, values=filler)
+    image.shape = (int(np.sqrt(len(image))), int(np.sqrt(len(image))))
+    return image
+
+
 def main():
+    # print(find_mode("sample_images/LWAC01_compression_10.j2k"))
+    # print(check_colour_depth("sample_images/LWAC01_compression_10.j2k"))
+    # print(np.array(Image.open("sample_images/LWAC01_compression_10.j2k").getdata()))
     # generated_image = np.asarray(calculate_difference("test_image.png",
     #                                                   "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"))
     # created_image = Image.fromarray(generated_image)
@@ -97,12 +108,20 @@ def main():
     # image = "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"
     # find_mode(image)
 
+    # image = Image.fromarray(load_raw_image("sample_images/LWAC01_uncompressed_image_raw.dat"))
+    # image.save("LWAC01_uncompressed_image.png")
+    # print(load_raw_image("LWAC01_outfile_compressed.dat"))
+    # print(image.size)
+    # image.show()
+
+    # print(load_raw_image("sample_images/LWAC01_outfile_compressed.dat"))
+
     # print("MSE: ")
-    # print(calculate_mse("grey_version.png", "test_image.jpg"))
+    # print(calculate_mse("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png", "LWAC01_recovery_final.png"))
     # print("PSNR: ")
-    # print(f"{calculate_psnr('grey_version.png', 'test_image.jpg')} dB")
+    # print(f"{calculate_psnr('sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png', 'LWAC01_recovery_final.png')} dB")
     # print("SSIM:")
-    # print(calculate_ssim(collect_greyscale_pixels("test_image.jpg"), collect_greyscale_pixels("grey_version.png")))
+    # print(calculate_ssim(check_colour_depth('sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png'), check_colour_depth("LWAC01_recovery_final.png")))
 
     # print(collect_greyscale_pixels("LWAC01_JPG_to_PNG.png"))
     # print(convert_16bit_to_8bit(collect_greyscale_pixels_16bit("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
@@ -113,10 +132,11 @@ def main():
 
     # print(calculate_difference("LWAC01_JPG.jpg", "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"))
 
-    sample_array = calculate_difference("LWAC01_JPG.jpg", "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")
-    sample_image = Image.fromarray(sample_array, mode='L')
-    sample_image.show()
-    print(sample_array)
+    # sample_array = calculate_difference("sample_images/test_j2k_compress_out.j2k", "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")
+    # sample_image = Image.fromarray(sample_array, mode='L')
+    # sample_image.show()
+    # print(sample_array)
+
 
     # print(collect_greyscale_pixels("saved-image.png"))
     # convert_image_format("LWAC02_JPG.jpg", "LWAC02_JPG_to_PNG.png")
