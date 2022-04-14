@@ -114,14 +114,21 @@ def main():
     # print(image.size)
     # image.show()
 
+    # image = Image.fromarray(load_raw_image(
+    #     "for_quality_calcs/acli_sandpit_rocks/comptest_objects2-sandpit2_LWAC01_T00_P00_compressed_1.uncompressed.dat"))
+    # # image.show()
+    # image.save("for_quality_calcs/acli_sandpit_rocks/comptest_objects2-sandpit2_LWAC01_T00_P00_compressed_1.uncompressed.png")
+
     # print(load_raw_image("sample_images/LWAC01_outfile_compressed.dat"))
 
-    # print("MSE: ")
-    # print(calculate_mse("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png", "LWAC01_recovery_final.png"))
-    # print("PSNR: ")
-    # print(f"{calculate_psnr('sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png', 'LWAC01_recovery_final.png')} dB")
-    # print("SSIM:")
-    # print(calculate_ssim(check_colour_depth('sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png'), check_colour_depth("LWAC01_recovery_final.png")))
+    print("MSE: ")
+    print(calculate_mse(
+        "AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_R01_00.png",
+        "for_quality_calcs/ACE_outside_2xpct/P00_T00_R01_00_compressed_0.1.uncompressed.png"))
+    print("PSNR: ")
+    print(f"{calculate_psnr('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_R01_00.png', 'for_quality_calcs/ACE_outside_2xpct/P00_T00_R01_00_compressed_0.1.uncompressed.png')} dB")
+    print("SSIM:")
+    print(calculate_ssim(check_colour_depth('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_R01_00.png'), check_colour_depth("for_quality_calcs/ACE_outside_2xpct/P00_T00_R01_00_compressed_0.1.uncompressed.png")))
 
     # print(collect_greyscale_pixels("LWAC01_JPG_to_PNG.png"))
     # print(convert_16bit_to_8bit(collect_greyscale_pixels_16bit("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
