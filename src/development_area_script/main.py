@@ -61,7 +61,7 @@ def calculate_mse(perfect_reference_image, subject_image):
 
 def calculate_psnr(perfect_reference_image, subject_image):
     # function to calculate Peak Signal to Noise Ratio
-    return (10 * (np.log10(255 ** 2))) / calculate_mse(perfect_reference_image, subject_image)
+    return (10 * (np.log10(65536 ** 2))) / calculate_mse(perfect_reference_image, subject_image)
 
 
 def calculate_ssim(perfect_reference_image, subject_image):
@@ -122,13 +122,14 @@ def main():
     # print(load_raw_image("sample_images/LWAC01_outfile_compressed.dat"))
 
     print("MSE: ")
-    print(calculate_mse(
-        "AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_R01_00.png",
-        "for_quality_calcs/ACE_outside_2xpct/P00_T00_R01_00_compressed_0.1.uncompressed.png"))
+    print(calculate_mse("AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/L0123-Composite.png",
+                        "AUPE_images_for_compression_tests/ACE_outside_2xpct/j2k_compress/L0123-Composite_8.j2k"))
     print("PSNR: ")
-    print(f"{calculate_psnr('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_R01_00.png', 'for_quality_calcs/ACE_outside_2xpct/P00_T00_R01_00_compressed_0.1.uncompressed.png')} dB")
+    print(f"{calculate_psnr('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/L0123-Composite.png', 'AUPE_images_for_compression_tests/ACE_outside_2xpct/j2k_compress/L0123-Composite_8.j2k')} dB")
     print("SSIM:")
-    print(calculate_ssim(check_colour_depth('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_R01_00.png'), check_colour_depth("for_quality_calcs/ACE_outside_2xpct/P00_T00_R01_00_compressed_0.1.uncompressed.png")))
+    print(calculate_ssim(
+        check_colour_depth('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/L0123-Composite.png'),
+        check_colour_depth("AUPE_images_for_compression_tests/ACE_outside_2xpct/j2k_compress/L0123-Composite_8.j2k")))
 
     # print(collect_greyscale_pixels("LWAC01_JPG_to_PNG.png"))
     # print(convert_16bit_to_8bit(collect_greyscale_pixels_16bit("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
