@@ -1,8 +1,12 @@
 Evaluations for analysis:
-- Pearsons Correlation Coefficient
-- T-Test
+- Pearsons Correlation Coefficient (graphs of time vs size reduction/quality vs size reduction)
+- two sample T-Test (95% confidence)
 - Box plots for both J2k and BPE data (sizes/times)
 - Avg Quality score (all three algos)
+- Avg change in size
+- Avg time taken to compress
+- Standard deviations
+- Absoltue Error Maps for certain "interesting cases"
 
 
 Prelim Experimentation:
