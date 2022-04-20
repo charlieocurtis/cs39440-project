@@ -4,6 +4,9 @@ from skimage.metrics import structural_similarity as ssim
 
 import sys
 import numpy as np
+import scipy.stats as stats
+import matplotlib.pyplot as plt
+import pandas as pd
 
 np.set_printoptions(threshold=sys.maxsize)
 
@@ -61,6 +64,7 @@ def calculate_mse(perfect_reference_image, subject_image):
 
 def calculate_psnr(perfect_reference_image, subject_image):
     # function to calculate Peak Signal to Noise Ratio
+    # peak signal val = 255 for 8bit, and 65536 for 16bit
     return (10 * (np.log10(65536 ** 2))) / calculate_mse(perfect_reference_image, subject_image)
 
 
@@ -114,22 +118,29 @@ def main():
     # print(image.size)
     # image.show()
 
+    # For boxplots of real time at both compression ratios for BPE
+    values = pd.read_csv("bpe_data_csv.csv", usecols=[4, 14], names=["compress-time-8", "compress-time-80"],
+                         skiprows=3, skip_blank_lines=True, dtype=np.float64).dropna()
+    plt.boxplot(values, labels=["8x real compression time (s)", "80x real compression time (s)"])
+    plt.show()
+
     # image = Image.fromarray(load_raw_image(
-    #     "for_quality_calcs/acli_sandpit_rocks/comptest_objects2-sandpit2_LWAC01_T00_P00_compressed_1.uncompressed.dat"))
-    # # image.show()
-    # image.save("for_quality_calcs/acli_sandpit_rocks/comptest_objects2-sandpit2_LWAC01_T00_P00_compressed_1.uncompressed.png")
+    #     "collated/acli_sandpit_rocks/compress_0.1/comptest_objects2-sandpit2_RWAC01_T00_P00_compressed_0.1.decoded.dat"))
+    # image.show()
+    # image.save("collated/acli_sandpit_rocks/compress_0.1/comptest_objects2-sandpit2_RWAC01_T00_P00_compressed_0.1.decoded.png")
 
     # print(load_raw_image("sample_images/LWAC01_outfile_compressed.dat"))
 
-    print("MSE: ")
-    print(calculate_mse("AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/L0123-Composite.png",
-                        "AUPE_images_for_compression_tests/ACE_outside_2xpct/j2k_compress/L0123-Composite_8.j2k"))
-    print("PSNR: ")
-    print(f"{calculate_psnr('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/L0123-Composite.png', 'AUPE_images_for_compression_tests/ACE_outside_2xpct/j2k_compress/L0123-Composite_8.j2k')} dB")
-    print("SSIM:")
-    print(calculate_ssim(
-        check_colour_depth('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/L0123-Composite.png'),
-        check_colour_depth("AUPE_images_for_compression_tests/ACE_outside_2xpct/j2k_compress/L0123-Composite_8.j2k")))
+    # print("MSE: ")
+    # print(calculate_mse("AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_L01_00.png",
+    #                     "collated/ACE_outside_2xpct/compress_0.1/P00_T00_L01_00_compressed_0.1.decoded.png"))
+    # print("PSNR: ")
+    # print(calculate_psnr('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_L01_00.png',
+    #                      'collated/ACE_outside_2xpct/compress_0.1/P00_T00_L01_00_compressed_0.1.decoded.png'))
+    # print("SSIM:")
+    # print(calculate_ssim(
+    #     check_colour_depth('AUPE_images_for_compression_tests/ACE_outside_2xpct/pre-compression/P00_T00_L01_00.png'),
+    #     check_colour_depth("collated/ACE_outside_2xpct/compress_0.1/P00_T00_L01_00_compressed_0.1.decoded.png")))
 
     # print(collect_greyscale_pixels("LWAC01_JPG_to_PNG.png"))
     # print(convert_16bit_to_8bit(collect_greyscale_pixels_16bit("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
