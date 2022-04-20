@@ -66,6 +66,7 @@
 > Saturday - Sunday: Reading, continued writing report, and prep for mid project demo
 
 > ### Week 8 (21st Mar - 27th Mar):
+> 
 > Monday: Prep for mid project demo
 > 
 > Tuesday: Mid Project demo
@@ -78,6 +79,21 @@
 >                  contingency plans for possible project change, planned parts of report that am able to write at this stage but this is also quite
 >                  limited
 
-> ### Week 10 (4th Apr - 10th Apr):
+================================ PROJECT CHANGE ================================
+
+> ### Week 10 & 11 (4th Apr - 17th Apr):
 >
-> Monday
+> Spent these two weeks collecting data for BPE (Bit Plane Encoder) at 8x and 80x compression and J2K (also at 8 and 80 times) compression algos and
+> generating tables of results for both algorithms and compression ratios - collected information such as:
+> 
+>   Original filesize/Time to encode and decode/compressed size/MSE, PSNR, and SSIM when compared o the original image
+>
+> Was unable to achieve compression and/or comparative analysis with RGBA images but still have plenty of data to work with but this must be mentioned in
+> report. Achieved this process semi autonomously through bash commands and used the in-progress Python script to calculate Image Quality.
+
+> ### Week 12 (18th Apr - 24th Apr):
+>
+> Monday - Tuesday: Corrected some issues with incorrectly collected data so had to re-process images to find certain information that was originally
+>                   incorrect.
+>
+> Wednesday: Planned and started working on collection of statistics that will help to inform answer to research question
