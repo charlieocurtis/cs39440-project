@@ -148,6 +148,10 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5705575
 Basic statistical tools in research and data analysis
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5037948/
 	Methods for calculating various stats on collected data
+	
+The qualitative-quantitative debate: moving frompositivism and confrontation to post-positivismand reconciliation
+https://onlinelibrary.wiley.com/doi/epdf/10.1046/j.1365-2648.1998.00651.x?saml_referrer
+	Research ideology (Positivism)
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
