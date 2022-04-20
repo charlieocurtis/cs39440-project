@@ -96,4 +96,4 @@
 > Monday - Tuesday: Corrected some issues with incorrectly collected data so had to re-process images to find certain information that was originally
 >                   incorrect.
 >
-> Wednesday: Planned and started working on collection of statistics that will help to inform answer to research question
+> Wednesday: Planned and started working on collection of statistics that will help to inform answer to research question, moreover started writing report
