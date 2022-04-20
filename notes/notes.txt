@@ -3,7 +3,7 @@ Evaluations for analysis:
 - two sample T-Test (95% confidence) - to do
 - Box plots for both J2k and BPE data (sizes/times) - done
 - Avg Quality score (all three algos) - done
-- Avg change in size
+- Avg change in size - ongoing
 - Avg time taken to compress - done
 - Standard deviations - to do
 - Absoltue Error Maps for certain "interesting cases" - ongoing
