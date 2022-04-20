@@ -144,6 +144,10 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4286985
 FSIM: A Feature Similarity Index for Image Quality Assessment
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5705575
 	Feature Similarity Index (FSIM) - had best results in aforementioned paper (paper containing intro to extra 10 IQAAs)
+	
+Basic statistical tools in research and data analysis
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5037948/
+	Methods for calculating various stats on collected data
 
 General:
 Image Quality Assessment Metrics based on Distortion Measures
