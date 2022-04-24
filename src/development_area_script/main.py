@@ -119,10 +119,10 @@ def main():
     # image.show()
 
     # For boxplots of real time at both compression ratios for BPE
-    values = pd.read_csv("bpe_data_csv.csv", usecols=[4, 14], names=["compress-time-8", "compress-time-80"],
-                         skiprows=3, skip_blank_lines=True, dtype=np.float64).dropna()
-    plt.boxplot(values, labels=["8x real compression time (s)", "80x real compression time (s)"])
-    plt.show()
+    # values = pd.read_csv("bpe_data_csv.csv", usecols=[4, 14], names=["compress-time-8", "compress-time-80"],
+    #                      skiprows=3, skip_blank_lines=True, dtype=np.float64).dropna()
+    # plt.boxplot(values, labels=["8x real compression time (s)", "80x real compression time (s)"])
+    # plt.show()
 
     # image = Image.fromarray(load_raw_image(
     #     "collated/acli_sandpit_rocks/compress_0.1/comptest_objects2-sandpit2_RWAC01_T00_P00_compressed_0.1.decoded.dat"))
@@ -145,7 +145,7 @@ def main():
     # print(collect_greyscale_pixels("LWAC01_JPG_to_PNG.png"))
     # print(convert_16bit_to_8bit(collect_greyscale_pixels_16bit("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
     # png_to_bmp("LWAC01_JPG_to_PNG.png", "LWAC01_JPG_to_BMP.bmp")
-    # print(find_mode("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"))
+    print(find_mode("L0123-Composite.png"))
 
     # write_pixel_values(collect_greyscale_pixels("LWAC01_JPG_to_BMP.bmp"), "test-output.txt")
 
