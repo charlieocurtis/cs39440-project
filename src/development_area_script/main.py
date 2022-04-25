@@ -99,7 +99,84 @@ def load_raw_image(raw_image_file):
     return image
 
 
+def calculate_averages():
+    bpe_values = pd.read_csv("bpe_data_csv.csv", usecols=[2, 3, 8, 13, 18], names=["original-size",
+                                                                                   "compressed-size-8",
+                                                                                   "decompressed-size-8",
+                                                                                   "compressed-size-80",
+                                                                                   "decompressed-size-80"],
+                             skiprows=3, skip_blank_lines=True, dtype=np.float64).dropna()
+    j2k_values = pd.read_csv("j2k_data_csv.csv", usecols=[2, 3, 8], names=["original-size",
+                                                                           "compressed-size-8",
+                                                                           "compressed-size-80"],
+                             skiprows=2, skip_blank_lines=True, dtype=np.float64).dropna()
+
+    size_difference_bpe_8x_compressed = np.array(bpe_values['original-size']) - \
+                                        np.array(bpe_values['compressed-size-8'])
+    size_difference_bpe_80x_compressed = np.array(bpe_values['original-size']) - \
+                                         np.array(bpe_values['compressed-size-80'])
+    size_difference_bpe_8x_decompressed = np.array(bpe_values['original-size']) - \
+                                          np.array(bpe_values['decompressed-size-8'])
+    size_difference_bpe_80x_decompressed = np.array(bpe_values['original-size']) - \
+                                           np.array(bpe_values['decompressed-size-80'])
+
+    size_difference_j2k_8x = np.array(j2k_values['original-size'] - j2k_values['compressed-size-8'])
+    size_difference_j2k_80x = np.array(j2k_values['original-size'] - j2k_values['compressed-size-80'])
+
+    print(f"=====BPE=====\n"
+          f"Average file size difference at:\n"
+          f"8x compression: {int(np.average(size_difference_bpe_8x_compressed))}\n"
+          f"8x decompression: {int(np.average(size_difference_bpe_8x_decompressed))}\n"
+          f"80x compression: {int(np.average(size_difference_bpe_80x_compressed))}\n"
+          f"80x decompression: {int(np.average(size_difference_bpe_80x_decompressed))}\n"
+          f"=====J2K=====\n"
+          f"Average file size difference at:\n"
+          f"8x compression: {int(np.average(size_difference_j2k_8x))}\n"
+          f"80x compression: {int(np.average(size_difference_j2k_80x))}\n"
+          f"=====STANDARD DEVIATIONS=====\n"
+          f"Standard deviation of change in file size with:\n"
+          f"BPE at 8x compression: {int(np.std(size_difference_bpe_8x_compressed))}\n"
+          f"BPE at 80x compression: {int(np.std(size_difference_bpe_80x_compressed))}\n"
+          f"BPE at 8x decompression: {int(np.std(size_difference_bpe_8x_decompressed))}\n"
+          f"BPE at 80x decompression: {int(np.std(size_difference_bpe_80x_decompressed))}\n"
+          f"\n"
+          f"J2K at 8x compression: {int(np.std(size_difference_j2k_8x))}\n"
+          f"J2K at 80x compression: {int(np.std(size_difference_j2k_80x))}")
+
+
+def generate_box(algorithm):
+    # For boxplots of real time at both compression ratios for BPE and j2k
+    if algorithm.upper().strip() == "BPE":
+        values = pd.read_csv("bpe_data_csv.csv", usecols=[4, 14], names=["compress-time-8", "compress-time-80"],
+                             skiprows=3, skip_blank_lines=True, dtype=np.float64).dropna()
+        plt.boxplot(values, labels=["8x real compression time (s)", "80x real compression time (s)"])
+        plt.show()
+    elif algorithm.upper().strip() == "J2K":
+        values = pd.read_csv("j2k_data_csv.csv", usecols=[4, 9], names=["compress-time-8", "compress-time-80"],
+                             skiprows=2, skip_blank_lines=True, dtype=np.float64).dropna()
+        plt.boxplot(values, labels=["8x real compression time (s)", "80x real compression time (s)"])
+        plt.show()
+    else:
+        print("Use algorithm abbreviations (bpe/j2k)")
+
+
 def main():
+    bpe_values = pd.read_csv("bpe_data_csv.csv", usecols=[2, 3, 4, 10, 11, 12, 13, 14], names=["original-size",
+                                                                                   "compress-size-8",
+                                                                                   "compress-time-8",
+                                                                                   "compress-mse-8",
+                                                                                   "compress-psnr-8",
+                                                                                   "compress-ssim-8",
+                                                                                   "compress-size-80",
+                                                                                   "compress-time-80"],
+                             skiprows=3, skip_blank_lines=True, dtype=np.float64).dropna()
+    size_difference_bpe_8x_compressed = np.array(bpe_values["original-size"] - np.array(bpe_values["compress-size-8"]))
+    size_difference_bpe_80x_compressed = np.array(bpe_values['original-size'] - np.array(bpe_values['compress-size-80']))
+    plt.scatter(size_difference_bpe_8x_compressed, bpe_values["compress-ssim-8"], c="green")
+    plt.xlabel("Reduction in file size of image compressed through BPE at x8 (kilobytes)")
+    plt.ylabel("SSIM")
+    plt.show()
+
     # print(find_mode("sample_images/LWAC01_compression_10.j2k"))
     # print(check_colour_depth("sample_images/LWAC01_compression_10.j2k"))
     # print(np.array(Image.open("sample_images/LWAC01_compression_10.j2k").getdata()))
@@ -108,7 +185,6 @@ def main():
     # created_image = Image.fromarray(generated_image)
     # print(calculate_psnr(generated_image))
     # created_image.show()
-
     # image = "sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png"
     # find_mode(image)
 
@@ -118,11 +194,8 @@ def main():
     # print(image.size)
     # image.show()
 
-    # For boxplots of real time at both compression ratios for BPE
-    # values = pd.read_csv("bpe_data_csv.csv", usecols=[4, 14], names=["compress-time-8", "compress-time-80"],
-    #                      skiprows=3, skip_blank_lines=True, dtype=np.float64).dropna()
-    # plt.boxplot(values, labels=["8x real compression time (s)", "80x real compression time (s)"])
-    # plt.show()
+    # calculate_averages()
+    # generate_box("j2k")
 
     # image = Image.fromarray(load_raw_image(
     #     "collated/acli_sandpit_rocks/compress_0.1/comptest_objects2-sandpit2_RWAC01_T00_P00_compressed_0.1.decoded.dat"))
@@ -145,7 +218,7 @@ def main():
     # print(collect_greyscale_pixels("LWAC01_JPG_to_PNG.png"))
     # print(convert_16bit_to_8bit(collect_greyscale_pixels_16bit("sample_images/comptest_objects2-sandpit2_LWAC01_T00_P00.png")))
     # png_to_bmp("LWAC01_JPG_to_PNG.png", "LWAC01_JPG_to_BMP.bmp")
-    print(find_mode("L0123-Composite.png"))
+    # print(find_mode("L0123-Composite.png"))
 
     # write_pixel_values(collect_greyscale_pixels("LWAC01_JPG_to_BMP.bmp"), "test-output.txt")
 
@@ -155,7 +228,6 @@ def main():
     # sample_image = Image.fromarray(sample_array, mode='L')
     # sample_image.show()
     # print(sample_array)
-
 
     # print(collect_greyscale_pixels("saved-image.png"))
     # convert_image_format("LWAC02_JPG.jpg", "LWAC02_JPG_to_PNG.png")
