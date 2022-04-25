@@ -5,7 +5,7 @@ Evaluations for analysis:
 - Avg Quality score (all three algos) - done
 - Avg change in size - done
 - Avg time taken to compress - done
-- Standard deviations - to do
+- Standard deviations - done
 - Absoltue Error Maps for certain "interesting cases" - ongoing
 
 
