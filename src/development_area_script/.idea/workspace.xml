@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a8f01927-cf18-4a7e-9aa0-aa5f02c88e74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../deliverables/report/cs39440-report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../deliverables/report/cs39440-report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../deliverables/report/data/collated_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../deliverables/report/data/collated_data.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpe_data_csv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bpe_data_csv.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j2k_data_csv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/j2k_data_csv.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +51,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sample_images" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/sample_images" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,8 +94,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>148</line>
-          <option name="timeStamp" value="8" />
+          <line>77</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
