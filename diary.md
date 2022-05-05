@@ -97,3 +97,13 @@
 >                   incorrect.
 >
 > Wednesday: Planned and started working on collection of statistics that will help to inform answer to research question, moreover started writing report
+>
+> Thursday - Sunday: Finished stats collection and continued writing report
+
+> ### Week 13 (25th Apr - 01th May):
+>
+> Monday - Sunday - Writting report
+
+> ### Week 14 (01st May - 08th May):
+>
+> Monday - Thrusday: Finish writting report, tidy GitHub repo ready for public status, comment script.
